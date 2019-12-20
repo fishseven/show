@@ -10,11 +10,11 @@ import com.fish.show.generator.domain.GenTable;
 import com.fish.show.generator.domain.GenTableColumn;
 import com.fish.show.generator.service.IGenTableColumnService;
 import com.fish.show.generator.service.IGenTableService;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import sun.misc.IOUtils;
 import com.fish.common.core.controller.BaseController;
 
 import javax.servlet.http.HttpServletResponse;
@@ -29,7 +29,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/tool/gen")
-public class GenController
+public class GenController extends BaseController
 {
     @Autowired
     private IGenTableService genTableService;
@@ -37,6 +37,7 @@ public class GenController
     @Autowired
     private IGenTableColumnService genTableColumnService;
 
+    private String prefix = "tool/gen";
 
     /**
      * 查询代码生成列表
@@ -53,7 +54,6 @@ public class GenController
     /**
      * 查询数据库列表
      */
-    @RequiresPermissions("tool:gen:list")
     @PostMapping("/db/list")
     @ResponseBody
     public TableDataInfo dataList(GenTable genTable)
@@ -66,7 +66,6 @@ public class GenController
     /**
      * 查询数据表字段列表
      */
-    @RequiresPermissions("tool:gen:list")
     @PostMapping("/column/list")
     @ResponseBody
     public TableDataInfo columnList(GenTableColumn genTableColumn)
@@ -81,7 +80,6 @@ public class GenController
     /**
      * 导入表结构
      */
-    @RequiresPermissions("tool:gen:list")
     @GetMapping("/importTable")
     public String importTable()
     {
@@ -91,7 +89,6 @@ public class GenController
     /**
      * 导入表结构（保存）
      */
-    @RequiresPermissions("tool:gen:list")
     @Log(title = "代码生成", businessType = BusinessType.IMPORT)
     @PostMapping("/importTable")
     @ResponseBody
@@ -119,7 +116,6 @@ public class GenController
     /**
      * 修改保存代码生成业务
      */
-    @RequiresPermissions("tool:gen:edit")
     @Log(title = "代码生成", businessType = BusinessType.UPDATE)
     @PostMapping("/edit")
     @ResponseBody
@@ -130,7 +126,6 @@ public class GenController
         return AjaxResult.success();
     }
 
-    @RequiresPermissions("tool:gen:remove")
     @Log(title = "代码生成", businessType = BusinessType.DELETE)
     @PostMapping("/remove")
     @ResponseBody
@@ -143,7 +138,6 @@ public class GenController
     /**
      * 预览代码
      */
-    @RequiresPermissions("tool:gen:preview")
     @GetMapping("/preview/{tableId}")
     @ResponseBody
     public AjaxResult preview(@PathVariable("tableId") Long tableId) throws IOException
@@ -155,7 +149,6 @@ public class GenController
     /**
      * 生成代码
      */
-    @RequiresPermissions("tool:gen:code")
     @Log(title = "代码生成", businessType = BusinessType.GENCODE)
     @GetMapping("/genCode/{tableName}")
     public void genCode(HttpServletResponse response, @PathVariable("tableName") String tableName) throws IOException
@@ -167,7 +160,6 @@ public class GenController
     /**
      * 批量生成代码
      */
-    @RequiresPermissions("tool:gen:code")
     @Log(title = "代码生成", businessType = BusinessType.GENCODE)
     @GetMapping("/batchGenCode")
     @ResponseBody
@@ -184,7 +176,7 @@ public class GenController
     private void genCode(HttpServletResponse response, byte[] data) throws IOException
     {
         response.reset();
-        response.setHeader("Content-Disposition", "attachment; filename=\"ruoyi.zip\"");
+        response.setHeader("Content-Disposition", "attachment; filename=\"show.zip\"");
         response.addHeader("Content-Length", "" + data.length);
         response.setContentType("application/octet-stream; charset=UTF-8");
         IOUtils.write(data, response.getOutputStream());

@@ -1,6 +1,7 @@
 package com.fish.common.xss;
 
-import com.ruoyi.common.utils.html.EscapeUtil;
+
+import com.fish.common.utils.html.EscapeUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;

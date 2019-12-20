@@ -1,9 +1,9 @@
 package com.fish.common.utils;
 
-import com.ruoyi.common.config.Global;
-import com.ruoyi.common.json.JSON;
-import com.ruoyi.common.json.JSONObject;
-import com.ruoyi.common.utils.http.HttpUtils;
+import com.fish.common.config.Global;
+import com.fish.common.json.JSON;
+import com.fish.common.json.JSONObject;
+import com.fish.common.utils.http.HttpUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

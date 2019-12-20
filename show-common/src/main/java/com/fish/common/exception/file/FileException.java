@@ -1,6 +1,7 @@
 package com.fish.common.exception.file;
 
-import com.ruoyi.common.exception.base.BaseException;
+
+import com.fish.common.exception.base.BaseException;
 
 /**
  * 文件信息异常类

@@ -1,6 +1,7 @@
 package com.fish.common.core.domain;
 
-import com.ruoyi.common.utils.StringUtils;
+
+import com.fish.common.utils.StringUtils;
 
 import java.util.HashMap;
 

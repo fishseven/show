@@ -1,6 +1,7 @@
 package com.fish.show.generator.mapper;
 
-import com.ruoyi.generator.domain.GenTable;
+import com.fish.show.generator.domain.GenTable;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * 
  * @author ruoyi
  */
+@Mapper
 public interface GenTableMapper
 {
     /**

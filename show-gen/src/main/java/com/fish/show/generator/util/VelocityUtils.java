@@ -1,12 +1,12 @@
 package com.fish.show.generator.util;
 
 import com.alibaba.fastjson.JSONObject;
-import com.ruoyi.common.constant.GenConstants;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.generator.config.GenConfig;
-import com.ruoyi.generator.domain.GenTable;
-import com.ruoyi.generator.domain.GenTableColumn;
+import com.fish.common.constant.GenConstants;
+import com.fish.common.utils.DateUtils;
+import com.fish.common.utils.StringUtils;
+import com.fish.show.generator.config.GenConfig;
+import com.fish.show.generator.domain.GenTable;
+import com.fish.show.generator.domain.GenTableColumn;
 import org.apache.velocity.VelocityContext;
 
 import java.util.ArrayList;

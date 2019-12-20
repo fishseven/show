@@ -1,6 +1,8 @@
 package com.fish.show.generator.mapper;
 
 import com.fish.show.generator.domain.GenTableColumn;
+import org.apache.ibatis.annotations.Mapper;
+import org.mybatis.spring.annotation.MapperScan;
 
 import java.util.List;
 
@@ -9,6 +11,7 @@ import java.util.List;
  * 
  * @author ruoyi
  */
+@Mapper
 public interface GenTableColumnMapper
 {
     /**

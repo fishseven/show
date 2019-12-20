@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @author ruoyi
  */
 @Component
-@PropertySource(value = { "classpath:generator.yml" })
+@PropertySource(value = { "classpath:application.yml" })
 public class GenConfig
 {
     /** 作者 */

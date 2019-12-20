@@ -1,7 +1,8 @@
 package com.fish.show.generator.domain;
 
-import com.ruoyi.common.core.domain.BaseEntity;
-import com.ruoyi.common.utils.StringUtils;
+
+import com.fish.common.core.domain.BaseEntity;
+import com.fish.common.utils.StringUtils;
 
 import javax.validation.constraints.NotBlank;
 

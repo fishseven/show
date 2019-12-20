@@ -1,6 +1,7 @@
 package com.fish.common.exception.user;
 
-import com.ruoyi.common.exception.base.BaseException;
+
+import com.fish.common.exception.base.BaseException;
 
 /**
  * 用户信息异常类

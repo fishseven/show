@@ -1,7 +1,7 @@
 package com.fish.common.annotation;
 
-import com.ruoyi.common.enums.BusinessType;
-import com.ruoyi.common.enums.OperatorType;
+import com.fish.common.enums.BusinessType;
+import com.fish.common.enums.OperatorType;
 
 import java.lang.annotation.*;
 

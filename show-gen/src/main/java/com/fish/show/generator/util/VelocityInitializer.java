@@ -1,6 +1,6 @@
 package com.fish.show.generator.util;
 
-import com.ruoyi.common.constant.Constants;
+import com.fish.common.constant.Constants;
 import org.apache.velocity.app.Velocity;
 
 import java.util.Properties;

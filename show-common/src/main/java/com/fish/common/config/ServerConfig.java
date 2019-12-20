@@ -1,6 +1,6 @@
 package com.fish.common.config;
 
-import com.ruoyi.common.utils.ServletUtils;
+import com.fish.common.utils.ServletUtils;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;

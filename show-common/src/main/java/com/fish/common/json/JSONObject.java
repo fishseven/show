@@ -1,7 +1,7 @@
 package com.fish.common.json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ruoyi.common.utils.StringUtils;
+import com.fish.common.utils.StringUtils;
 
 import java.util.*;
 import java.util.regex.Matcher;

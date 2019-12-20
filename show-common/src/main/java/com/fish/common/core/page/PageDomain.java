@@ -1,6 +1,7 @@
 package com.fish.common.core.page;
 
-import com.ruoyi.common.utils.StringUtils;
+
+import com.fish.common.utils.StringUtils;
 
 /**
  * 分页数据

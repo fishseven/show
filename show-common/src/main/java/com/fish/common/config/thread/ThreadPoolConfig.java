@@ -1,6 +1,6 @@
 package com.fish.common.config.thread;
 
-import com.ruoyi.common.utils.Threads;
+import com.fish.common.utils.Threads;
 import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

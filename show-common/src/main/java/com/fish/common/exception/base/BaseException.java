@@ -1,7 +1,8 @@
 package com.fish.common.exception.base;
 
-import com.ruoyi.common.utils.MessageUtils;
-import com.ruoyi.common.utils.StringUtils;
+
+import com.fish.common.utils.MessageUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * 基础异常

@@ -1,6 +1,7 @@
 package com.fish.common.utils;
 
-import com.ruoyi.common.core.text.StrFormatter;
+
+import com.fish.common.core.text.StrFormatter;
 
 import java.util.Collection;
 import java.util.Map;

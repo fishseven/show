@@ -1,14 +1,14 @@
 package com.fish.common.utils.file;
 
-import com.ruoyi.common.config.Global;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.exception.file.FileNameLengthLimitExceededException;
-import com.ruoyi.common.exception.file.FileSizeLimitExceededException;
-import com.ruoyi.common.exception.file.InvalidExtensionException;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.security.Md5Utils;
+import com.fish.common.config.Global;
+import com.fish.common.constant.Constants;
+import com.fish.common.exception.file.FileNameLengthLimitExceededException;
+import com.fish.common.exception.file.FileSizeLimitExceededException;
+import com.fish.common.exception.file.InvalidExtensionException;
+import com.fish.common.utils.DateUtils;
+import com.fish.common.utils.security.Md5Utils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;

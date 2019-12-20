@@ -1,10 +1,10 @@
 package com.fish.show.generator.util;
 
-import com.ruoyi.common.constant.GenConstants;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.generator.config.GenConfig;
-import com.ruoyi.generator.domain.GenTable;
-import com.ruoyi.generator.domain.GenTableColumn;
+import com.fish.common.constant.GenConstants;
+import com.fish.common.utils.StringUtils;
+import com.fish.show.generator.config.GenConfig;
+import com.fish.show.generator.domain.GenTable;
+import com.fish.show.generator.domain.GenTableColumn;
 import org.apache.commons.lang3.RegExUtils;
 
 import java.util.Arrays;

@@ -1,6 +1,7 @@
 package com.fish.common.annotation;
 
-import com.ruoyi.common.enums.DataSourceType;
+
+import com.fish.common.enums.DataSourceType;
 
 import java.lang.annotation.*;
 

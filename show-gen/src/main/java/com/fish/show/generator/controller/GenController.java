@@ -97,7 +97,8 @@ public class GenController extends BaseController
         String[] tableNames = Convert.toStrArray(tables);
         // 查询表信息
         List<GenTable> tableList = genTableService.selectDbTableListByNames(tableNames);
-        String operName = (String) PermissionUtils.getPrincipalProperty("loginName");
+//        String operName = (String) PermissionUtils.getPrincipalProperty("loginName");
+        String operName = "test";
         genTableService.importGenTable(tableList, operName);
         return AjaxResult.success();
     }

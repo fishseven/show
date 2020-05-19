@@ -10,7 +10,7 @@
     </resultMap>
 
     <select id="getDetail" resultMap="User">
-        select * from user where user_id = 1
+        select * from sys_user where user_id = 1
     </select>
 
 </mapper>

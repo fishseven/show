@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>show-api</artifactId>
+    <artifactId>show-rabbitmq-consumer</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>com.fish</groupId>
@@ -21,20 +22,5 @@
             <artifactId>show-common</artifactId>
             <version>4.1.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.2.3.RELEASE</version>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-
     </dependencies>
-
 </project>

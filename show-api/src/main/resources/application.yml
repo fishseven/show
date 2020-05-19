@@ -1,11 +1,19 @@
 # 开发环境配置
 server:
     # 服务器的HTTP端口，默认为80
-    port: 8088
+    port: 8089
 # 数据源配置
 spring:
     application:
         name: show
+        #配置rabbitMq 服务器
+    rabbitmq:
+        host: 127.0.0.1
+        port: 5672
+        username: guest
+        password: guest
+        #虚拟host 可以不设置,使用server默认host
+        #virtual-host: JCcccHost
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver

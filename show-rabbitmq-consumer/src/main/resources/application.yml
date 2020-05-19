@@ -1,11 +1,19 @@
 # 开发环境配置
 server:
     # 服务器的HTTP端口，默认为80
-    port: 8088
+    port: 8090
 # 数据源配置
 spring:
     application:
         name: show
+        #配置rabbitMq 服务器
+    rabbitmq:
+        host: 127.0.0.1
+        port: 5672
+        username: guest
+        password: guest
+        #虚拟host 可以不设置,使用server默认host
+        #virtual-host: JCcccHost
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
@@ -51,18 +59,3 @@ spring:
             wall:
                 config:
                     multi-statement-allow: true
-# MyBatis
-mybatis:
-    # 搜索指定包别名
-    typeAliasesPackage: com.fish.**.domain
-    # 配置mapper的扫描，找到所有的mapper.xml映射文件
-    mapperLocations: classpath*:mapper/**/*Mapper.xml
-    # 加载全局的配置文件
-    configLocation: classpath:mybatis/mybatis-config.xml
-
-# PageHelper分页插件
-pagehelper:
-    helperDialect: mysql
-    reasonable: true
-    supportMethodsArguments: true
-    params: count=countSql

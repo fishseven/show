@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<div id="onclick" onclick="test()"> 点击发送请求</div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+function test(){
+    for(var i=0;i<1000;i++){
+        console.log(i)
+        $.ajax({
+            type: "POST",
+            url: "/test/getId",
+            async : true,//是否为同步
+            data: {id:i},
+            success: function(resp){
+                console.log(resp)
+            },
+
+        });
+    }
+
+}
+
+</script>

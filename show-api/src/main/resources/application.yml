@@ -59,6 +59,10 @@ spring:
             wall:
                 config:
                     multi-statement-allow: true
+    redis:
+        host: 127.0.0.1
+        port: 6379
+        password:
 # MyBatis
 mybatis:
     # 搜索指定包别名
@@ -74,3 +78,5 @@ pagehelper:
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
+
+
